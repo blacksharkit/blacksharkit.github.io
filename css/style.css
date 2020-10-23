@@ -1,0 +1,358 @@
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+* {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+}
+.menu-scroll {
+    transition: 0.25s;
+    background-color: #032859;
+}
+.menu-scroll ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.24s;
+}
+.menu-scroll ul li:hover::after {
+    width: 100%;
+    margin-top: 3%;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.25s;
+    height: 70px;
+    padding: 1%;
+    z-index: 2;
+}
+.menu .logo {
+    margin-left: 4%;
+    width: 100px;
+    height: 70px;
+}
+.menu ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    margin-right: 3%;
+    cursor: pointer;
+}
+.menu ul li a {
+    color: #fff;
+}
+.home {
+    height: 100%;
+}
+.home .top-image {
+    width: 100%;
+    height: 100%;
+}
+.home .content-top {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.home .content-top .content {
+    margin-left: 5%;
+}
+.home .content-top .content h1 {
+    color: white;
+    margin: 0;
+    font-size: 38px;
+}
+.home .content-top .content span {
+    color: #e2e2e2;
+    font-size: 14px;
+}
+.home .content-top .content .buttons {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.home .content-top .content .buttons button {
+    padding: 3% 0;
+    width: 40%;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.home .content-top .content .buttons button.what-we-do {
+    background-color: white;
+    color: #090d1e;
+}
+.home .content-top .content .buttons button.contact {
+    background-color: #f2994a;
+    color: white;
+}
+.home .content-top .content .buttons button:hover {
+    opacity: 0.8;
+}
+.home .about-company-content {
+    display: flex;
+    width: 100%;
+    padding: 1% 0;
+}
+.home .about-company-content .content-infos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 4%;
+}
+.home .about-company-content .content-infos h1 {
+    color: #032859;
+}
+.home .about-company-content .content-infos p {
+    font-size: 20px;
+}
+.home .about-company-content .content-infos button {
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 3% 0;
+    width: 30%;
+    font-size: 16px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #f2994a;
+    color: white;
+    transition: 0.25s;
+}
+.home .about-company-content .content-infos button:hover {
+    background: #c35a04 d7;
+    opacity: 0.8;
+}
+.home .about-company-content .content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.home .about-company-content .content-image img {
+    width: 80%;
+    margin-top: 3%;
+}
+.home .content-what-we-do {
+    display: flex;
+    flex-direction: column;
+    background-color: #032859;
+    width: 100%;
+    padding: 1% 0;
+    padding-bottom: 6%;
+}
+.home .content-what-we-do h1 {
+    margin: 5% 4%;
+    color: #fff;
+}
+.home .content-what-we-do .content-info-service {
+    display: flex;
+    justify-content: space-evenly;
+}
+.home .content-contact-send {
+    display: flex;
+    width: 100%;
+    padding: 1% 0;
+    padding-bottom: 6%;
+}
+.home .content-contact-send .container-form {
+    width: 50%;
+    display: flex;
+    margin-left: 4%;
+    flex-direction: column;
+}
+.home .content-contact-send .container-form h1 {
+    color: #032859;
+}
+.home .content-contact-send .container-form form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.home .content-contact-send .container-form form label {
+    margin-top: 3%;
+}
+.home .content-contact-send .container-form form label span {
+    color: #f24a4a;
+}
+.home .content-contact-send .container-form form input {
+    font-size: 16px;
+    margin-top: 3%;
+    border: none;
+    background: #e3e3e3;
+    border-radius: 10px;
+    padding: 5% 3%;
+    transition: 0.25s;
+}
+.home .content-contact-send .container-form form input:focus {
+    border: none;
+    border-left: 1px solid #f2994a;
+}
+.home .content-contact-send .container-form form textarea {
+    resize: none;
+    font-size: 16px;
+    margin-top: 3%;
+    border: none;
+    background: #e3e3e3;
+    border-radius: 10px;
+    padding: 10% 3%;
+}
+.home .content-contact-send .container-form form textarea:focus {
+    border: none;
+    border-left: 1px solid #f2994a;
+}
+.home .content-contact-send .container-form form button {
+    margin: 0 auto;
+    margin-top: 7%;
+    padding: 3% 0;
+    width: 40%;
+    font-size: 16px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #f2994a;
+    color: white;
+    transition: 0.25s;
+}
+.home .content-contact-send .container-form form button:hover {
+    background: #c35a04 d7;
+    opacity: 0.8;
+}
+.home .content-contact-send .container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.home footer {
+    width: 100%;
+    background: #032859;
+    padding: 1% 0;
+}
+.home footer .name-company {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
+.home footer .container-email-and-techs {
+    display: flex;
+    margin-left: 4%;
+}
+.home footer .container-email-and-techs .content-email-news {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.home footer .container-email-and-techs .content-email-news p {
+    font-size: 18px;
+    color: #fff;
+}
+.home footer .container-email-and-techs .content-email-news form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.home footer .container-email-and-techs .content-email-news form input {
+    font-size: 16px;
+    margin-top: 3%;
+    border: none;
+    background: #e3e3e3;
+    border-radius: 10px;
+    padding: 4% 3%;
+    transition: 0.25s;
+}
+.home footer .container-email-and-techs .content-email-news form input:focus {
+    border: none;
+    border-left: 1px solid #f2994a;
+}
+.home footer .container-email-and-techs .content-email-news form button {
+    margin-top: 7%;
+    padding: 3% 0;
+    width: 40%;
+    font-size: 16px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #f28705;
+    color: white;
+    transition: 0.25s;
+}
+.home footer .container-email-and-techs .content-email-news form button:hover {
+    background-color: #f28705;
+    opacity: 0.8;
+}
+.home footer .container-email-and-techs .technologies-that-we-use {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 4%;
+}
+.home footer .container-email-and-techs .technologies-that-we-use p {
+    color: #fff;
+    font-size: 17px;
+}
+.home footer .container-email-and-techs .technologies-that-we-use .content-icons {
+    display: flex;
+}
+.home footer .container-email-and-techs .technologies-that-we-use .content-icons .icon-techs {
+    margin-left: 1%;
+}
+.home footer .social-network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home footer .social-network .link-network {
+    cursor: pointer;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.container-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 4% 1%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+.container-service .img-tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 4% 0;
+}
+.container-service h2 {
+    color: #fff;
+}
+.container-service p {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
