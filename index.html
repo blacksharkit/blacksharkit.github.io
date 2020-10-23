@@ -6,9 +6,10 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class='menu'>
+  <div class='menu' id='menu'>
 
     <img src='images/logo-white.png' class='logo' />
 
@@ -35,11 +36,11 @@
       </div>
     </div>
 
-    <div class='about-company-content'>
+    <div class='about-company-content' id='sobre'>
       <div class='content-infos'>
-        <h1>Sobre</h1>
+        <h2>Sobre</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          A Black Shark IT é uma empresa digital que cria soluções a partir de uma metodologia que une UI/UX design e desenvolvimento web. Com o time formado por analistas de sistemas e desenvolvedores full-stack, a Black Shark IT realiza entregas em desenvolvimento de aplicações mobile, sistemas web e design gráfico com as tecnologias mais atuais presente no mercado.
         </p>
         <button>Entrar em contato</button>
       </div>
@@ -48,79 +49,54 @@
       </div>
     </div>
 
-    <div class='content-what-we-do'>
-      <h1>O que fazemos?</h1>
+    <div class='content-what-we-do' id='servicos'>
+      <h2>O que fazemos?</h2>
 
       <div class='content-info-service'>
         <div class='container-service' style='background-color: #F2994A;'>
-          <div class='img-tech'>{icon}</div>
+          <div class='img-tech'><i class="fa fa-desktop"></i></div>
           <h2>Criaço de website</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p>Somos experts no desenvolvimento de sites, portais e sistemas profissionais. Tudo isto unido a boas práticas de UI/UX design e a compatibilidade para os mais diversos tipos de dispositivos.</p>
         </div>
         <div class='container-service' style='background-color: #4ACAF2;'>
-          <div class='img-tech'>{icon}</div>
-          <h2>Criaço de website</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <div class='img-tech'><i class="fa fa-mobile"></i></div>
+          <h2>Desenvolvimento mobile</h2>
+          <p>Desenvolvemos aplicações mobile híbridas ou nativas para atender as necessidades de negócios e abrir novas portas para o desenvolvimento tecnológico da sua empresa.</p>
         </div>
         <div class='container-service' style='background-color: #F24A4A;'>
-          <div class='img-tech'>{icon}</div>
-          <h2>Criaço de website</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <div class='img-tech'><i class="fa fa-pencil"></i></div>
+          <h2>Design Gráfico</h2>
+          <p>Nosso Trabalho engloba gráficos e identidades, logos e sites de forma eficaz, clara e contemporânea.</p>
         </div>
       </div>
     </div>
 
-    <div class='content-contact-send'>
-      <div class='container-form'>
-        <h1>Contato</h1>
+    <div class='content-contact-send' id='contato'>
+      <h2>Entre em contato conosco</h2>
 
-        <form>
-          <label htmlFor='name'>Nome <span>*</span></label>
-          <input type='text' id='name' />
+      <div class='content'>
+        <div class='contact-info'>
+          <div class='item'><i class='fa fa-instagram'></i> <a href='https://www.instagram.com/blackshark_it/'>@blackshark_it</a></div>
+          <div class='item'><i class='fa fa-facebook'></i> <a href='https://www.instagram.com/blackshark_it/'>@blackshark_it</a></div>
+          <div class='item'><i class='fa fa-whatsapp'></i> <a href='https://bit.ly/3kim6M6'>+55 (85) 98714-4112</a></div>
+          <div class='item'><i class='fa fa-envelope'></i> <a href='mailto:blackshark.comercial@outlook.com'>blackshark.comercial@outlook.com</a></div>
+        </div>
 
-          <label htmlFor='email'>Email <span>*</span></label>
-          <input type='text' id='email' />
-
-          <label htmlFor='message'>Mensagem <span>*</span></label>
-          <textarea id='message'></textarea>
-
-          <button>Enviar</button>
-        </form>
+        <img src='images/contact-image.png' class='container-image' alt='contact Image' />
       </div>
-
-      <img src='images/contact-image.png' class='container-image' alt='contact Image' />
-
     </div>
 
     <footer>
-      <p class='name-company'>Black Shark IT. <span>{date}</span></p>
-
-      <div class='container-email-and-techs'>
-        <div class='content-email-news'>
-          <p>Quer ficar ligado em conteudos exclusivos sobre a Black Shark IT? Registre seu email</p>
-          <form>
-            <input type='text' />
-
-            <button>Enviar</button>
-          </form>
-        </div>
-        <div class='technologies-that-we-use'>
-          <p>Tecnologias que Utilizamos</p>
-          <div class='content-icons'>
-            <FaPython size={40} class='icon-techs' color='#F28705' />
-            <DiDjango size={40} class='icon-techs' color='#F28705' />
-            <FaHtml5 size={40} class='icon-techs' color='#F28705' />
-            <FaReact size={40} class='icon-techs' color='#F28705' />
-          </div>
-        </div>
-      </div>
+      <p class='name-company'>Black Shark IT. <span id='year'></span></p>
 
       <p class='name-company'>Nos siga nas nossas redes sociais</p>
       <div class='social-network'>
-        <FaFacebookSquare class='link-network' size={40} color='#fff' />
-        <FiInstagram class='link-network' size={40} color='#fff' />
+        <a class='link-network' href='https://www.instagram.com/blackshark_it/' target='_black'><i class='fa fa-instagram'></i></a>
+        <a class='link-network' href=''><i class='fa fa-facebook'></i></a>
       </div>
     </footer>
   </div>
+
+  <script src='js/main.js'></script>
 </body>
 </html>
