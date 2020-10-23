@@ -223,6 +223,11 @@ body, html, #root {
     display: flex;
     align-items: center;
 }
+.contact-info .item a:hover {
+    transition: 0.25s;
+    color: #f2994a;
+    text-decoration: underline;
+}
 .contact-info i {
     font-size: 2rem;
     margin-right: 3%;

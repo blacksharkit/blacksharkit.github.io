@@ -14,3 +14,18 @@ window.onscroll = () => {
   else
     menu.classList.add('menu-scroll')
 }
+
+
+// menu scrolling animated
+const scrollTo = (scrollY) => {
+  const body = $('html, body')
+  body.stop().animate({ scrollTop: scrollY }, 600, 'swing');
+}
+
+const about = $('#sobre')
+const service = $('#servicos')
+const contact = $('#contato')
+$('.menu-home').click(() => scrollTo(0))
+$('.menu-about').click(() => scrollTo(about.offset().top))
+$('.menu-service').click(() => scrollTo(service.offset().top))
+$('.menu-contact').click(() => scrollTo(contact.offset().top))

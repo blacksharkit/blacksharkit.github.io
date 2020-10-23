@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Black Shark - desenvolvimento de sistemas e design gráfico</title>
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,10 +14,10 @@
     <img src='images/logo-white.png' class='logo' />
 
     <ul>
-      <li><a>Inicio</a></li>
-      <li><a>Sobre</a></li>
-      <li><a>O que fazemos?</a></li>
-      <li><a>Contato</a></li>
+      <li class='menu-home'><a>Inicio</a></li>
+      <li class='menu-about'><a>Sobre</a></li>
+      <li class='menu-service'><a>O que fazemos?</a></li>
+      <li class='menu-contact'><a>Contato</a></li>
     </ul>
   </div>
 
@@ -31,8 +31,8 @@
         <span>Empresa focada em desenvolver sistemas para o seu negócio</span>
 
         <div class='buttons'>
-          <button class='what-we-do'>O que fazemos?</button>
-          <button class='contact'>Contato</button>
+          <button class='what-we-do menu-service'>O que fazemos?</button>
+          <button class='contact menu-contact'>Contato</button>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
         <p>
           A Black Shark IT é uma empresa digital que cria soluções a partir de uma metodologia que une UI/UX design e desenvolvimento web. Com o time formado por analistas de sistemas e desenvolvedores full-stack, a Black Shark IT realiza entregas em desenvolvimento de aplicações mobile, sistemas web e design gráfico com as tecnologias mais atuais presente no mercado.
         </p>
-        <button>Entrar em contato</button>
+        <button class='menu-contact'>Entrar em contato</button>
       </div>
       <div class='content-image'>
         <img src='images/sobre-image.png' alt='In image' />
@@ -98,6 +98,7 @@
     </footer>
   </div>
 
+  <script src='js/jquery-3.5.1.min.js'></script>
   <script src='js/main.js'></script>
 </body>
 </html>
