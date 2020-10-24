@@ -11,18 +11,7 @@ body, html, #root {
 .menu-scroll {
     transition: 0.25s;
     background-color: #032859;
-}
-.menu-scroll ul li::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: 0.24s;
-}
-.menu-scroll ul li:hover::after {
-    width: 100%;
-    margin-top: 3%;
+    border-bottom: 2px solid #f2994a;
 }
 .menu {
     width: 100%;
@@ -35,6 +24,18 @@ body, html, #root {
     height: 70px;
     padding: 1%;
     z-index: 2;
+}
+.menu ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.24s;
+}
+.menu ul li:hover::after {
+    width: 100%;
+    margin-top: 3%;
 }
 .menu .logo {
     margin-left: 4%;
@@ -196,13 +197,13 @@ body, html, #root {
     background: #fff;
     margin: 4% 0;
 }
-.container-service h2 {
+.container-service h3 {
     color: #fff;
 }
 .container-service p {
     font-size: 16px;
     text-align: center;
-    color: #fff;
+    color: rgba(255, 255, 255, .9);
 }
 .container-service i {
     font-size: 2rem;
